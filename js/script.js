@@ -1,12 +1,13 @@
-// const km = prompt ( 'inserisci i km da percorrere ')
-// const eta= prompt ('inserisci la tua eta')
+
 
 
 
 // input 
 const name= document.querySelector('.name')
-const km= document.querySelector ('.km')
-let eta = document.querySelector ('.age ')
+let km= document.querySelector ('.km')
+let eta= document.querySelector ('.age ')
+
+
 
 // btn 
 const btn1= document.querySelector('.btn-1')
@@ -25,9 +26,8 @@ let messaggio=''
 
 
 btn1.addEventListener('click', function(){
-})
-
-if (eta='Minorenne'){
+  
+  if (eta= 'Minorenne'){
   messaggio= (fixedBigliettoMinori)
   console.log(fixedBigliettoMinori)
 }
@@ -38,5 +38,8 @@ else if ( eta= 'over 65'){
 else{
   messaggio=(costoBiglietto)
 }
+})
+
+
 
 document.getElementById('totale').innerHTML+=messaggio
